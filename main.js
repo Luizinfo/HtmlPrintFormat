@@ -2,13 +2,13 @@
 var receiptID = "20180613T130518.512Z";
 var receiptQRID = "4#4s1Fs"
 
-JsBarcode("#barcode", receiptID, {
-  format: "code128",
-  width: 1.3,
-  height: 30,
-  marginLeft: 0,
-  displayValue: false
-});
+// JsBarcode("#barcode", receiptID, {
+//   format: "code128",
+//   width: 1.3,
+//   height: 30,
+//   marginLeft: 0,
+//   displayValue: false
+// });
 
 var qrcode = new QRCode(document.getElementById("qrcode"), {
 	text: "https://gg.bronyhouse.com/r/"+receiptQRID,

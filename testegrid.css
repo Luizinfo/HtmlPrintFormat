@@ -1,0 +1,26 @@
+.header{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.header > span{
+    padding: 8px 4px;
+    border-bottom: 1px solid black;
+}
+
+.itens{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-top: 1px solid black;
+}
+
+
+.itens > span{
+    padding: 8px 4px;
+    border-bottom: 1px solid black;
+}
+
+.itens :first-child {
+    grid-column: 1 / -1;
+    border-bottom: none;
+  }

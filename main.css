@@ -39,8 +39,22 @@ body {
   #location {
     margin-top: 5pt;
     text-align: center;
-    font-size: 16pt;
+    font-size: 13pt;
     font-weight: bold;
+  }
+
+  #location {
+    margin-top: 5pt;
+    text-align: center;
+    font-size: 13pt;
+    font-weight: bold;
+  }
+
+  #tipo {
+    margin: 5pt 0px;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold
   }
   
   #date {
@@ -56,14 +70,6 @@ body {
   
   #barcode:empty {
     display: none;
-  }
-  
-  .watermark {
-     position: absolute;
-     left: 7mm;
-     top: 60mm;
-     width: 75mm;
-     opacity: 0.1;
   }
   
   .keepIt {
@@ -138,7 +144,8 @@ body {
   
   #qrcode {
     align-self: center;
-    flex: 0 0 100px
+    flex: 0 0 100px;
+    padding-top: 5px;
   }
   
   .totals {
@@ -278,4 +285,68 @@ body {
       border-right-color: #c2e1f5;
       border-width: 36px;
       margin-top: -36px;
+  }
+
+
+
+
+
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.header > span{
+    padding: 8px 4px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.itens{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    /* border-top: 1px solid black; */
+}
+
+
+.itens > span{
+    padding: 8px 4px;
+    border-bottom: 1px solid black;
+}
+
+.itens :first-child {
+    grid-column: 1 / -1;
+    border-bottom: none;
+  }
+
+  .entrega{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.entrega > span{
+    padding: 8px 4px;
+}
+
+.total{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+
+.total > span{
+    padding: 8px 4px;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+  .qtd-item{
+    text-align: right;
+  }
+
+  .total-item{
+    text-align: right;
   }

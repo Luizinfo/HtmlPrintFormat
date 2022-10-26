@@ -1,0 +1,137 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Roboto">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.8.0/dist/barcodes/JsBarcode.code128.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
+
+</head>
+<body>
+<!-- START RECEIPT -->
+<div class="receipt">
+    <div class="orderNo">
+      Parking ID# <span id="Order #">71</span>: <span id="Order Name">Jet Set</span>
+    </div>
+    <div class="headerSubTitle">
+      Parking Receipt
+    </div>
+    <div class="headerTitle">
+      SSKD Parking Yard
+    </div>
+    <div class="headerSubTitle">
+      Hayathnagar, Hyd-70, 8247524795
+    </div>
+    <div id="location">
+      Vehicle Details
+    </div>
+    <div id="location">
+      AP 29 CH 7553
+    </div>
+    <div id="date">
+     In Time: Saturday, Jun 13 2018 1:05:18
+    </div>
+    <svg id="barcode"></svg>
+    
+    <hr>
+
+    <div style="display: grid">
+        <table style="width:100%">
+            <tr>
+                <th class="">Item</th>
+                <th class="">Valor Uni.</th>
+                <th class="">Qtd</th>
+                <th class="">Total</th>
+            </tr>
+            <tr style="border-bottom:0.5pt solid black;">
+                <td colspan="4" class="">
+                    Nomo do Produto
+                    <em><br><mark>comentário</mark></em>
+                </td>
+            </tr>
+            <tr style="border-bottom:0.5pt solid black;">
+                <td class="">
+                    R$ 10,00
+                </td>
+                <td class="">
+                    x
+                    <span>5</span>
+                </td>
+                <td colspan="2" class="text-right">
+                    <span class="text-preco">R$ 50,00</span>
+                </td>
+            </tr>
+    
+            <tr id="linha_taxa">
+                <td class="">
+                    <span>Entrega</span>
+                </td>
+                <td colspan="3" class="text-right">
+                    <span class="text-preco">R$ 5,00</span>
+                </td>
+            </tr>
+    
+            <tr id="linha_total_sem_taxa" style="border-top:2pt solid black;">
+                <td class="">
+                    <b class="text-preco">TOTAL</b>
+                </td>
+                <td class="">
+    
+                </td>
+                <td class="">
+                    <b></b>
+                    <b>5</b> <br>
+                </td>
+                <td class="text-right">
+                    <b class="text-preco">R$ 55,00</b>
+                </td>
+                <td></td>
+            </tr>
+    
+        </table>
+        <hr>
+    
+    </div>
+    <!-- Items Purchased -->
+  <div class="flex">
+      <div id="qrcode"></div>
+      <div class="totals">
+        <div class="section">
+          <div class="row">
+            <div class="col1"></div>
+            <div class="col2">Cost (per day)</div>
+            <div class="col3">₹60</div>
+          </div>
+          <div class="row">
+            <div class="col1"></div>
+            <div class="col2">Battery</div>
+            <div class="col3">1</div>
+          </div>
+          <div class="row">
+            <div class="col1"></div>
+            <div class="col2">Toolkit</div>
+            <div class="col3">yes</div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col1"></div>
+            <div class="col2">Load</div>
+            <div class="col3">Empty</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+   <div class="keepIt">
+      Keep your receipt!
+    </div>
+    <div class="keepItBody">
+      This original receipt is required to pick up any OnDemand items* or for Returns. Undamaged merchandise can be returned for a refund within 24 hours. Faulty goods can be exchanged anytime during this convention while the vendor hall is open. No returns are allowed for OnDemand items except at the discretion of BronyHouse staff. *Unclaimed on-demand items can be claimed without receipt in the final hours of the convention by describing the order in detail.
+    </div>
+</div>
+
+  <script src="main.js"></script>
+</body>
+  </html>
